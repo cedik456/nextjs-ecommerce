@@ -5,7 +5,7 @@ import { UseCartStore } from "@/store/cart-store";
 import Link from "next/link";
 import React, { useEffect } from "react";
 
-export default function page() {
+export default function SuccessPage() {
   const { clearCart } = UseCartStore();
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export default function page() {
         Thank you for your purchase. Your order is being processed.
       </p>
       <Button asChild>
-        <a href="/products">Continue Shopping</a>
+        <Link href="/products">Back to products</Link>
       </Button>
     </div>
   );
