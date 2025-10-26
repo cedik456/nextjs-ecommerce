@@ -32,9 +32,9 @@ export default function ProductDetail({ product }: Props) {
         <Image
           alt={product.name}
           src={product.images[0]}
-          width={500}
+          width={499}
           height={500}
-          className=" transition-opacity duration-500 ease-in-out "
+          className=" transition-opacity duration-500 ease-in-out  "
         />
       )}
 
